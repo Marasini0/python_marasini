@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% block content %}
+<h1>Home Template</h1>
+<div>
+
+    {%for room in learn %} <!--Template Tags-->
+    <div>
+        <h5> {{room.id}} -- {{ room.name}} </h5> <!--Templates Variables-->
+    </div>
+    {% endfor %}
+
+</div>
+
+
+{% endblock content %}
+
+{% block sidebar %}
+<h2>Hello</h2>
+
+<p>Test</p>
+{% endblock sidebar %}

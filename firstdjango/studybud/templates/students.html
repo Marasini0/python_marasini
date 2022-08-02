@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<h1>Students</h1>
+<div>
+    <p>Students and Questions record counts:</p>
+    <ul>
+        <li><strong>Students:</strong> {{ num_students }} </li>
+        <li><strong>Questions:</strong> {{ num_questions }} </li>
+    </ul>
+    <h2>Students Details </h2>
+    {% for alls in all_students %}
+    <div>
+        <p>{{alls.id}} -- {{alls.name}} </p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
